@@ -12,6 +12,11 @@
 		DF87EACB20FC923F0031E631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF87EAC920FC923F0031E631 /* Main.storyboard */; };
 		DF87EACD20FC92400031E631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF87EACC20FC92400031E631 /* Assets.xcassets */; };
 		DF87EAD020FC92400031E631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF87EACE20FC92400031E631 /* LaunchScreen.storyboard */; };
+		DF87EAD820FC93F40031E631 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87EAD720FC93F40031E631 /* PhotoPicker.swift */; };
+		DF87EADA20FC94B50031E631 /* LivePhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87EAD920FC94B50031E631 /* LivePhotoPicker.swift */; };
+		DF87EADD20FC95CE0031E631 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87EADC20FC95CE0031E631 /* Commons.swift */; };
+		DF87EADF20FC9AA60031E631 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87EADE20FC9AA60031E631 /* PhotoPickerView.swift */; };
+		DF87EAE120FCA0560031E631 /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF87EAE020FCA0560031E631 /* AssetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		DF87EACC20FC92400031E631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF87EACF20FC92400031E631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF87EAD120FC92400031E631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF87EAD720FC93F40031E631 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		DF87EAD920FC94B50031E631 /* LivePhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoPicker.swift; sourceTree = "<group>"; };
+		DF87EADC20FC95CE0031E631 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		DF87EADE20FC9AA60031E631 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		DF87EAE020FCA0560031E631 /* AssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,33 @@
 			children = (
 				DF87EAC520FC923F0031E631 /* AppDelegate.swift */,
 				DF87EAC720FC923F0031E631 /* ViewController.swift */,
+				DF87EADC20FC95CE0031E631 /* Commons.swift */,
+				DF87EADB20FC94BA0031E631 /* Photo Picker */,
 				DF87EAC920FC923F0031E631 /* Main.storyboard */,
 				DF87EACC20FC92400031E631 /* Assets.xcassets */,
 				DF87EACE20FC92400031E631 /* LaunchScreen.storyboard */,
 				DF87EAD120FC92400031E631 /* Info.plist */,
 			);
 			path = LiveGIF;
+			sourceTree = "<group>";
+		};
+		DF87EADB20FC94BA0031E631 /* Photo Picker */ = {
+			isa = PBXGroup;
+			children = (
+				DF87EAD720FC93F40031E631 /* PhotoPicker.swift */,
+				DF87EAD920FC94B50031E631 /* LivePhotoPicker.swift */,
+				DF87EAE220FCA05A0031E631 /* View */,
+			);
+			path = "Photo Picker";
+			sourceTree = "<group>";
+		};
+		DF87EAE220FCA05A0031E631 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF87EADE20FC9AA60031E631 /* PhotoPickerView.swift */,
+				DF87EAE020FCA0560031E631 /* AssetCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF87EAE120FCA0560031E631 /* AssetCell.swift in Sources */,
+				DF87EADA20FC94B50031E631 /* LivePhotoPicker.swift in Sources */,
+				DF87EADF20FC9AA60031E631 /* PhotoPickerView.swift in Sources */,
 				DF87EAC820FC923F0031E631 /* ViewController.swift in Sources */,
+				DF87EADD20FC95CE0031E631 /* Commons.swift in Sources */,
 				DF87EAC620FC923F0031E631 /* AppDelegate.swift in Sources */,
+				DF87EAD820FC93F40031E631 /* PhotoPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

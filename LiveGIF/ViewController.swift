@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var photoPicker: PhotoPicker?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +23,19 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func openPicker(_ sender: Any) {
+  
+        let picker = LivePhotoPicker()
+        self.photoPicker = picker
+        
+        picker.show(in: self, completion: nil)
+        
+    }
+    
+    
+}
+
+extension ViewController: PhotoPickerDelegate {
+    
 }
 
