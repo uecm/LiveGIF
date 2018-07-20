@@ -19,13 +19,19 @@ protocol PhotoPicker: AnyObject {
     
     var photoPickerView: PhotoPickerViewing? { get }
     
+    var allowsMultipleSelection: Bool { get set }
+    
+    /// Determines if instance will call its' delegate UIImage or PHAsset method
+    var convertsToImage: Bool { get set }
+    
     func show(in presenter: PhotoPickerPresenter, completion: Callback?)
     func dismiss(completion: Callback?)
 }
 
 // Notify Presenter about actions from Photo Picker
 protocol PhotoPickerDelegate {
-    
+    func photoPicker(_ picker: PhotoPicker, didSelect images: [UIImage])
+    func photoPicker(_ picker: PhotoPicker, didSelect assets: [PHAsset])
 }
 
 
@@ -37,6 +43,8 @@ protocol PhotoPickerViewing: AnyObject {
     var viewController: UIViewController { get }
     
     var delegate: PhotoPickerViewingDelegate? { get set }
+    
+    var allowsMultipleSelection: Bool { get set }
     
     func showAssets(_ assets: [PHAsset]?)
 }
